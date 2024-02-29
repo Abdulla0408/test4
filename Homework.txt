@@ -1,0 +1,45 @@
+-- Birinchi vazifa
+
+-- DROP TABLE IF EXISTS users;
+-- CREATE TABLE IF NOT EXISTS users(
+-- 	user_id INTEGER NOT NULL UNIQUE,
+-- 	user_name CHAR(15),
+-- 	lastname VARCHAR,
+-- 	age INTEGER NOT NULL,
+-- 	phone BIGINT,
+-- 	email VARCHAR,
+-- 	address VARCHAR
+-- );
+-- INSERT INTO users(user_id, user_name, lastname, age, phone,email,address) VALUES
+-- (1, 'Abdulla', 'Hayitboyev',15,998908457512,'abdulla@gmail.com','Namangan'),
+-- (2,'Toxir', 'Toxirov', '34',998901234567,'toxir@gmail.com','Andijon'),
+-- (3,'Jalil', 'Sobirov',23,998991234567,'jalil@gmail.com', 'Ferghana'),
+-- (4,'Sobir', 'Sobirov',45, 998771234567,'sobir@gmail.com','Toshkent'),
+-- (5,'Qodir', 'Aliyev',34,998991234567,'qodir@gmail.com', 'Samarqand');
+
+-- SELECT * FROM users;
+
+-- DROP TABLE IF EXISTS employees;
+-- CREATE TABLE IF NOT EXISTS employees AS SELECT user_id,user_name, lastname, phone, email FROM users WHERE user_id>3; 
+
+-- SELECT * FROM employees;
+
+-- ===================================================================================
+-- Ikkinchi vazifa
+
+DROP TABLE IF EXISTS categories;
+-- CREATE TABLE IF NOT EXISTS categories(
+-- 	car_id INTEGER NOT NULL UNIQUE,
+-- 	suv VARCHAR,
+-- 	price VARCHAR,
+-- 	production INTEGER
+-- );
+-- INSERT INTO categories(car_id, suv, price, production) VALUES
+-- (1,'Mercedes-Benz GLA','50.50 mln Rs', 2024),
+-- (2,'Hyundai Creta','11.00 mln Rs', 2024),
+-- (3,'Mahindra Scorpio N','13.60 mln Rs', 2024),
+-- (4,'Mercedes-Benz GLA','50.50 mln Rs', 2024);
+
+-- SELECT * FROM categories;
+
+
